@@ -11,10 +11,11 @@ public class SummeAllerZahlen {
         int gz = Integer.parseInt(eingabe);
 
         int summe = 0;
-        for (int i = 0; i <= gz; i = i + 1 );{
+        for (int i = 0; i <= gz; i = i + 1 ) {
             System.out.println();
             summe = summe + i;
-        }
         System.out.println(summe);
+    }
+
     }
 }
