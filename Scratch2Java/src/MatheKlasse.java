@@ -1,3 +1,4 @@
+
 public class MatheKlasse {
     public static void main(String[] args) {
         int radius = 10;
@@ -12,5 +13,4 @@ public class MatheKlasse {
         System.out.println(Math.abs(umsatzSteuer * -1));
         System.out.println(Math.sqrt(2));
     }
-
 }
