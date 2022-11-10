@@ -5,11 +5,6 @@ import java.io.InputStreamReader;
 public class Dreicksungleichung {
     public static void main(String[] args) throws IOException {
 
-        //String = Zeichentypen
-        //double = Kommazahlen
-        //int = Ganzzahlen
-        //boolean = Wahrheitswerte
-
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Gib den Zahl für die Seite a");
