@@ -1,3 +1,4 @@
+package TaschenRechner;
 
 public class MatheKlasse {
     public static void main(String[] args) {

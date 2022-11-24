@@ -1,3 +1,5 @@
+package ErsteProgramme;
+
 public class ZweitesProgramm {
     public static void main(String[] args) {
         int zahl1 = 5 ;

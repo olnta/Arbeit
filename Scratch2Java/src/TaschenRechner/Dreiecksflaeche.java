@@ -1,3 +1,5 @@
+package TaschenRechner;
+
 public class Dreiecksflaeche {
     public static void main(String[] args) {
         System.out.println("Dreicksflaeche");

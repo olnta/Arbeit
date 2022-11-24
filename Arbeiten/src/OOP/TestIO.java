@@ -20,7 +20,6 @@ public class TestIO {
 
             System.out.println("Soll das Programm erneut laufen?");
         }while(IO.readBoolean());
-
     }
 
 }

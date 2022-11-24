@@ -13,9 +13,6 @@ public class IO {
 
 
 
-
-
-
     /**
      * Liest einen Text von der Konsole.
      * @return Der eingelesene Text.
