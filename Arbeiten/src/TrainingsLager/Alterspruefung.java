@@ -15,8 +15,5 @@ public class Alterspruefung {
         }else if (alter >= 18){
             System.out.println("Du bist schon volljährig!");
         }
-
-
-
     }
 }

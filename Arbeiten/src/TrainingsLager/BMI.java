@@ -47,6 +47,5 @@ public class BMI {
                 System.out.println("Starke Adipositas");
             }
         }
-
     }
 }

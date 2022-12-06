@@ -20,5 +20,4 @@ public class Fuehrerschein {
             System.out.println("Du darfst jetzt auch Auto fahren.");
         }
     }
-
 }

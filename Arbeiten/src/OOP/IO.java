@@ -80,7 +80,7 @@ public class IO {
 
             }
 
-            System.out.println("Ungültige Eingabe! Bitter erneut versuchen: ");
+            System.out.println("Ungültige Eingabe! Bitte erneut versuchen: ");
 
         }
     }

@@ -31,11 +31,7 @@ public class Bestellung {
                 System.out.println("Die Bestellung ist nicht möglich!");
                 System.out.print("Möchten Sie die Bestellung neu aufnehmen? j - n");
             }
-
-
         }while(IO.readBoolean());
 
     }
-
-
 }
