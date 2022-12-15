@@ -8,24 +8,29 @@ public class Widerstand {
 
     public static void main(String[] args) throws IOException {
 
+        double r1 = 0;
+        double r2 = 0;
+        String eingabe;
+
         System.out.println("Möchten Sie den Widerstand einer Parallelschaltung oder einer Reihenschaltung rechnen. Wählen Sie bitte P oder R.");
-        String eingabe =IO.readString();
-        if ( eingabe.equals("R")){
+        eingabe =IO.readString();
+
+        if ( eingabe.equalsIgnoreCase("R")){
 
             System.out.println("Geben sie R1 ein");
-            double r1 = IO.readDouble();
+            r1 = IO.readDouble();
             System.out.println("Geben Sie r2 ein");
-            double r2 = IO.readDouble();
-            double wiederstand = r1 + r2;
-            System.out.println(wiederstand);
-        } else if (eingabe.equals("P")){
+            r2 = IO.readDouble();
+            double reihenschaltung = r1 + r2;
+            System.out.println(reihenschaltung);
+        } else if (eingabe.equalsIgnoreCase("P")){
 
             System.out.println("Geben sie R1 ein");
-            double r1 = IO.readDouble();
+            r1 = IO.readDouble();
             System.out.println("Geben Sie r2 ein");
-            double r2 = IO.readDouble();
-            double widerstand1 = ((r1 + r2) / (r1 + r2));
-            System.out.println(widerstand1);
+            r2 = IO.readDouble();
+            double parallelschaltung = (r1 + r2 / (r1 + r2));
+            System.out.println(parallelschaltung);
         }
 
 
