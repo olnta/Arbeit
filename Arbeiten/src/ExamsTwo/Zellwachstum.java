@@ -9,7 +9,7 @@ public class Zellwachstum {
     public static void main(String[] args) throws IOException {
 
         System.out.println("Wie viel Tage haben sie die Zellen untersucht?");
-        int tag = IO.readInterger();
+        int tag = IO.readInteger();
         System.out.println("Anzahl Tage:" + tag);
 
         System.out.println("\nTag         Zellmenge");

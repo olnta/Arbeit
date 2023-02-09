@@ -13,7 +13,7 @@ public class Widerstand {
         String eingabe;
 
         System.out.println("Möchten Sie den Widerstand einer Parallelschaltung oder einer Reihenschaltung rechnen. Wählen Sie bitte P oder R.");
-        eingabe =IO.readString();
+        eingabe = IO.readString();
 
         if ( eingabe.equalsIgnoreCase("R")){
 

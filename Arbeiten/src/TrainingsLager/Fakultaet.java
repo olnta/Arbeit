@@ -9,7 +9,7 @@ public class Fakultaet {
     public static void main(String[] args) throws IOException {
 
         System.out.print("Welche Fakultät soll ermittelt werden: ");
-        int n = IO.readInterger();
+        int n = IO.readInteger();
         double faklutaet = 1;
         int i = 1;
 

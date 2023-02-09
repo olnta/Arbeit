@@ -4,86 +4,154 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Erzeugt die Methoden:
+ * -IO.readString   Eingabe für Texte
+ * -IO.readInteger  Eingabe für Ganzzahlen
+ * -IO.readDouble   Eingabe für Kommazahlen
+ * -IO.readBoolean  Eingabe für Wahrheitswerte
+ */
+
 public class IO {
-
-    /**Liest einen Wahrheitswert von der Konsole
-     * @return Den Wahrheitswert
-     * @throws IOException
-     */
-
-
-
-    /**
-     * Liest einen Text von der Konsole.
-     * @return Der eingelesene Text.
-     * @throws IOException
-     */
-
     public static String readString() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String eingabe = br.readLine();
-        return eingabe;
-
+        String text = br.readLine();
+        return text;
     }
 
-
-    public static int readInterger() throws IOException {
+    public static int readInteger() throws IOException {
+        /**
+         * Schleife fragt ab, ob beim "try" fehler auftreten. Wenn welche auftreten, dann werden
+         * sie aufgefangen(catch) und man muss den Wert neu eingeben.
+         */
         while (true) {
-            String eingabe = readString();
-            try {
-                int ganzzahl = Integer.parseInt(eingabe);
-                return ganzzahl;
-
-            }
-
-            catch (NumberFormatException e) {
-                System.out.print("Keine Ganzzahl! Bitte erneut versuchen: ");
-
+            try { //IO.readString ist ein String also eine Eingabe und wird in einen int Wert umgewandelt und in x gepackt
+                int x = Integer.parseInt(IO.readString().trim().replace(',', '.'));
+                return x;
+            } catch (NumberFormatException e) {
+                System.out.println("Keine Ganzzahl! Bite erneut versuchen: ");
             }
         }
     }
 
     public static double readDouble() throws IOException {
         while (true) {
-            String eingabe = readString().replace(",",".");
             try {
-                double kommazahl =Double.parseDouble(eingabe);
-                return kommazahl;
-            }
-
-            catch (NumberFormatException e) {
-                System.out.print("Keine Nachkommazahl! Bitte erneut versuchen: ");
-
+                double x = Double.parseDouble(IO.readString().trim().replace(',', '.'));
+                return x;
+            } catch (NumberFormatException e) {
+                System.out.println("Keine Doublezahl! Bite erneut versuchen: ");
             }
         }
-
     }
 
+    /**
+     * Liest den Wahrheitswert von der Konsole ein
+     *
+     * @return den Warheitswert
+     * @throws IOException
+     */
     public static boolean readBoolean() throws IOException {
         while (true) {
-            String eingabe = readString();
-            if (eingabe != null) {
-
-                if ((eingabe.equalsIgnoreCase("ja"))
-                        || (eingabe.equalsIgnoreCase("j"))
-                        || (eingabe.equalsIgnoreCase("yes"))
-                        || (eingabe.equalsIgnoreCase("y"))) {
+            String x = readString();
+            /**
+             * !x = nicht gleich/ungleich
+             * null = NICHTS
+             */
+            if (x != null) {
+                if ((x.equalsIgnoreCase("Ja"))
+                        || (x.equalsIgnoreCase("j"))
+                        || (x.equalsIgnoreCase("Yes"))
+                        || (x.equalsIgnoreCase("y"))) {
                     return true;
-
-                }
-
-                else if((eingabe.equalsIgnoreCase("nein"))
-                        || (eingabe.equalsIgnoreCase("n"))
-                        || (eingabe.equalsIgnoreCase("no"))) {
+                } else if ((x.equalsIgnoreCase("Nein"))
+                        || (x.equalsIgnoreCase("n"))
+                        || (x.equalsIgnoreCase("No"))) {
                     return false;
                 }
-
             }
-
-            System.out.println("Ungültige Eingabe! Bitte erneut versuchen: ");
-
+            System.out.println("Ungültige eingabe! Bitte erneut versuchen.");
         }
     }
 
+    public static int[] readArrayInteger() throws IOException {
+
+        //Deklaration
+        int[] zahlen;
+
+        //Größe abfragen
+        System.out.println("Wie viele Zahlen sollen erfasst werden");
+        int groesse = IO.readInteger();
+
+        //Array Initialisieren
+        zahlen = readArrayInteger(groesse);
+
+        return zahlen;
+    }
+
+    public static int[] readArrayInteger(int anzahl) throws IOException {
+
+        //Deklaration
+        int[] zahlen = new int[anzahl];
+
+        for (int i = 0; i < zahlen.length; i++) {
+            System.out.print("Bitte erfassen sie den Wert " + (i + 1) + ": ");
+            zahlen[i] = IO.readInteger();
+            System.out.println(" ");
+        }
+        return zahlen;
+    }
+
+    public static double[] readArrayDouble() throws IOException {
+        //Deklaration
+        double[] zahlen;
+
+        //Größe abfragen
+        System.out.println("Wie viele Zahlen sollen erfasst werden");
+        int groesse = IO.readInteger();
+
+        //Array Initialisieren
+        zahlen = readArrayDouble(groesse);
+
+        return zahlen;
+    }
+
+    public static double[] readArrayDouble(int anzahl) throws IOException {
+        //Deklaration
+        double[] zahlen = new double[anzahl];
+
+        for (int i = 0; i < zahlen.length; i++) {
+            System.out.print("Bitte erfassen sie den Wert " + (i + 1) + ": ");
+            zahlen[i] = IO.readDouble();
+            System.out.println(" ");
+        }
+        return zahlen;
+    }
+
+    public static String[] readArrayString() throws IOException {
+        //Deklaration
+        String[] texte;
+
+        //Größe abfragen
+        System.out.println("Wie viele Texte sollen erfasst werden");
+        int groesse = IO.readInteger();
+
+        //Array Initialisieren
+        texte = readArrayString();
+
+        return texte;
+    }
+
+    public static String[] readArrayString(int anzahl) throws IOException {
+        //Deklaration
+        String[] texte = new String[anzahl];
+
+        for (int i = 0; i < texte.length; i++) {
+            System.out.print("Bitte erfassen sie den Wert " + (i + 1) + ": ");
+            texte[i] = IO.readString();
+            System.out.println(" ");
+        }
+        return texte;
+    }
 }
 

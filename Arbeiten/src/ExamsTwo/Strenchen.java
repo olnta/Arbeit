@@ -8,10 +8,10 @@ public class Strenchen {
 
     public static void main(String[] args) throws IOException {
         System.out.println("Geben Sie ein den erste Nummer ein:");
-        int zahl1 = IO.readInterger();
+        int zahl1 = IO.readInteger();
 
         System.out.println("Geben Sie den zweiten Nummer ein:");
-        int zahl2 = IO.readInterger();
+        int zahl2 = IO.readInteger();
 
         System.out.println("1. Zahl: " + zahl1);
         System.out.println("2. Zahl: " + zahl2);

@@ -8,10 +8,10 @@ public class ModuloRest {
 
     public static void main(String[] args) throws IOException {
         System.out.print("Gib den Anfangsnummer ein: ");
-        int anfang = IO.readInterger();
+        int anfang = IO.readInteger();
 
         System.out.print("Gib den Schlussnummer ein: ");
-        int schulss = IO.readInterger();
+        int schulss = IO.readInteger();
 
 
         for(int i = anfang; i <= schulss; i = i + 2){

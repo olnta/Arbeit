@@ -16,7 +16,7 @@ public class BMI {
         System.out.println("Was ist Ihre Geschlecht");
         System.out.println("0 = Männlich");
         System.out.println("1 = Weiblich");
-        int geschlecht = IO.readInterger();
+        int geschlecht = IO.readInteger();
 
         double bmi = gewicht / Math.pow(groesse, 2);
 
