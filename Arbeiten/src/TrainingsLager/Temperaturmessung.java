@@ -18,7 +18,7 @@ public class Temperaturmessung {
         //arr = IO.readArrayDouble(tage);
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.print("Geben Sie die Temperatur am Tag " +(i+1)+ " ein: ");
+            System.out.print("Geben Sie die Temperatur am Tag " +(i + 1) + " ein: ");
             arr[i] = IO.readDouble();
         }
 
@@ -36,9 +36,11 @@ public class Temperaturmessung {
         double max = arr[0];
         for (int i = 0; i < arr.length; i++){
 
-            if(max < arr.length){
-                max = arr.length;
-            }
+            max = Math.max(max, arr[i]);
+
+            //if(max < arr.length){
+            //    max = arr.length;
+            //}
         }
 
         System.out.println("Die Höchstemperatur ist: " + max);

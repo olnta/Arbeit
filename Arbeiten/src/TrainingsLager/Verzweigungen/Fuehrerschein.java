@@ -1,4 +1,4 @@
-package TrainingsLager;
+package TrainingsLager.Verzweigungen;
 
 import OOP.IO;
 

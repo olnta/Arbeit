@@ -1,4 +1,4 @@
-package ExamsTwo;
+package TrainingsLager.WachstumUndZellwachstum;
 
 import OOP.IO;
 

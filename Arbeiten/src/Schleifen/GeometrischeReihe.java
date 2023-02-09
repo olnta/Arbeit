@@ -1,4 +1,4 @@
-package TrainingsLager;
+package Schleifen;
 
 import OOP.IO;
 
