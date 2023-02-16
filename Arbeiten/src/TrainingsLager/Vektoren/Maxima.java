@@ -4,10 +4,8 @@ import OOP.IO;
 
 import java.io.IOException;
 
-public class Verdoppeln {
-
+public class Maxima {
     public static void main(String[] args) throws IOException {
-
 
         System.out.println("Bitte geben Sie ein Array aus Kommazahlen ein. ");
         System.out.print("Wie viele Werte? ");
@@ -19,16 +17,14 @@ public class Verdoppeln {
             array[i] = IO.readDouble();
         }
 
-        System.out.println("Ursprüngliches Array: ");
-        for (int i = 0; i < array.length; i++){
-            System.out.print(array[i] + "\t");
+        double max = array[0];
+
+        for(int i = 0; i < array.length; i++) {
+            max = Math.max(max, array[i]);
         }
 
-        System.out.println("\nVerdoppeltes Array:");
-        for (int i = 0; i < array.length; i++){
-            double x2 = array[i] * 2;
-            System.out.print(x2 + "\t");
-        }
 
+        System.out.println("Größte Zahl: " + max);
+        System.out.println("Zweite Zahl: ");
     }
 }
