@@ -47,7 +47,7 @@ public class Lagerbestand {
 
         double gesamtpreis = 0;
         for (int i = 0; i < artikel.length; i++) {
-            gesamtpreis = preis[i] * gesamtmenge;
+            gesamtpreis += preis[i] * gesamtmenge;
         }
 
 
