@@ -1,6 +1,5 @@
-package TrainingsLager.WachstumUndZellwachstum;
+package TrainingsLager;
 
-import OOP.IO;
 import OOP.IO;
 
 import java.io.IOException;
@@ -26,13 +25,13 @@ public class Sparvertrag {
         double jahresendbetrag;
 
         System.out.println("Jahr" + "\t\tAnfangskapital" + "\t\tZinsbetrag" + "\t\tJahresendbetrag");
-        for (int i = 1; i <= laufzeit; i++) {
-            zinsbetrag = zinssatz / 100 * kapital;
+        for (int i = 1; i <= laufzeit; i++){
+            zinsbetrag = zinssatz/100*kapital;
             jahresendbetrag = kapital + zinsbetrag;
             System.out.print(i);
-            System.out.print("\t\t\t" + df.format(Math.round(kapital * 100.0) / 100.0));
-            System.out.print("\t\t\t" + df.format(Math.round(zinsbetrag * 100.0) / 100.0));
-            System.out.print("\t\t\t" + df.format(Math.round(jahresendbetrag * 100.0) / 100.0));
+            System.out.print("\t\t\t"+ df.format(Math.round(kapital*100.0)/100.0));
+            System.out.print("\t\t\t"+ df.format(Math.round(zinsbetrag*100.0)/100.0));
+            System.out.print("\t\t\t"+df.format(Math.round(jahresendbetrag*100.0)/100.0));
             kapital = jahresendbetrag;
             System.out.println();
         }
