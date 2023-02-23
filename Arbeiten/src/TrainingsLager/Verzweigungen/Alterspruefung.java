@@ -10,9 +10,9 @@ public class Alterspruefung {
         System.out.println("Wie Alt bist du?");
 
         int alter = IO.readInteger();
-        if (alter < 18){
+        if (alter < 18) {
             System.out.println("Du bist noch minderjährig!");
-        }else if (alter >= 18){
+        } else if (alter >= 18) {
             System.out.println("Du bist schon volljährig!");
         }
     }

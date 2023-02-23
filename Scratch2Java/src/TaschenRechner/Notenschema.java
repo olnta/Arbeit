@@ -27,6 +27,6 @@ public class Notenschema {
         } else {
             Note = 1;
         }
-        System.out.println("Ihre Note ist:" +Note);
+        System.out.println("Ihre Note ist:" + Note);
     }
 }

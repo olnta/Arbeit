@@ -1,4 +1,4 @@
-package Schleifen;
+package TrainingsLager.Schleifen;
 
 import OOP.IO;
 
@@ -13,7 +13,7 @@ public class Wurzel {
         System.out.print("Was ist die letzte Zahl:");
         int n2 = IO.readInteger();
 
-        for (int i = n1; i <= n2; i++){
+        for (int i = n1; i <= n2; i++) {
             System.out.println(i + "\t" + "Wurzel: " + Math.sqrt(i));
         }
 

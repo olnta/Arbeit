@@ -12,14 +12,14 @@ public class Maxima {
         int kz = IO.readInteger();
         double array[] = new double[kz];
 
-        for ( int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             System.out.print("Wert " + (i + 1) + " eingeben: ");
             array[i] = IO.readDouble();
         }
 
         double max = array[0];
 
-        for(int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             max = Math.max(max, array[i]);
         }
 

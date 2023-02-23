@@ -1,4 +1,4 @@
-package Schleifen;
+package TrainingsLager.Schleifen;
 
 import OOP.IO;
 
@@ -13,7 +13,7 @@ public class Fakultaet {
         double faklutaet = 1;
         int i = 1;
 
-        while ( i <= n){
+        while (i <= n) {
             faklutaet = faklutaet * i;
             i++;
         }

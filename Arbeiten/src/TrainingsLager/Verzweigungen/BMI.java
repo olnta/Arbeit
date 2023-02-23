@@ -21,29 +21,29 @@ public class BMI {
         double bmi = gewicht / Math.pow(groesse, 2);
 
 
-        if (geschlecht == 1){
-            if (bmi < 19){
+        if (geschlecht == 1) {
+            if (bmi < 19) {
                 System.out.println("Untergewicht");
-            }else if (bmi < 24){
+            } else if (bmi < 24) {
                 System.out.println("Normalgewicht");
-            }else if (bmi < 30){
+            } else if (bmi < 30) {
                 System.out.println("Übergewicht");
-            }else if ( bmi < 40){
+            } else if (bmi < 40) {
                 System.out.println("Adipositas");
-            }else if (bmi >= 40){
+            } else if (bmi >= 40) {
                 System.out.println("Starke Adipositas");
             }
 
-        }else if (geschlecht == 0){
-            if (bmi < 20){
+        } else if (geschlecht == 0) {
+            if (bmi < 20) {
                 System.out.println("Untergewicht");
-            }else if (bmi < 25){
+            } else if (bmi < 25) {
                 System.out.println("Normalgewicht");
-            }else if (bmi < 30){
+            } else if (bmi < 30) {
                 System.out.println("Übergewicht");
-            }else if ( bmi < 40){
+            } else if (bmi < 40) {
                 System.out.println("Adipositas");
-            }else if (bmi >= 40){
+            } else if (bmi >= 40) {
                 System.out.println("Starke Adipositas");
             }
         }

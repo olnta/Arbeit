@@ -17,13 +17,13 @@ public class VariablesArrayDouble {
         //Array Initialisieren
         zahlen = new double[groesse];
 
-        for(int i = 0; i < zahlen.length; i++){
+        for (int i = 0; i < zahlen.length; i++) {
             System.out.print("Bitte erfassen sie den Wert " + (i + 1) + ": ");
             zahlen[i] = IO.readDouble();
             System.out.println(" ");
         }
         //ausgabe der erfassten zahlen
-        for(int i = 0; i < zahlen.length; i++){
+        for (int i = 0; i < zahlen.length; i++) {
             System.out.println(zahlen[i]);
         }
     }

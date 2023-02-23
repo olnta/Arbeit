@@ -14,9 +14,9 @@ public class ModuloRest {
         int schulss = IO.readInteger();
 
 
-        for(int i = anfang; i <= schulss; i = i + 2){
+        for (int i = anfang; i <= schulss; i = i + 2) {
             //Modulo-Operation
-            if((i % 2) == 0){
+            if ((i % 2) == 0) {
                 System.out.println(i);
             }
 

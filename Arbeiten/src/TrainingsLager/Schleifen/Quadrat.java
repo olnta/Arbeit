@@ -1,4 +1,4 @@
-package Schleifen;
+package TrainingsLager.Schleifen;
 
 import OOP.IO;
 
@@ -11,22 +11,22 @@ public class Quadrat {
         System.out.print("Wie groß soll das Quadrat sein? ");
         int n = IO.readInteger();
 
-        for (int i = 1; i <= n; i++){
+        for (int i = 1; i <= n; i++) {
             System.out.print("*");
         }
 
         System.out.println("");
 
-        for (int i = 1; i <=  n; i++){
+        for (int i = 1; i <= n; i++) {
             System.out.print("*");
 
-            for (int i2 = 1; i2 <= n - 2; i2++){
+            for (int i2 = 1; i2 <= n - 2; i2++) {
                 System.out.print(" ");
             }
             System.out.println("*");
         }
 
-        for (int i = 1; i <= n; i++){
+        for (int i = 1; i <= n; i++) {
             System.out.print("*");
         }
     }

@@ -31,7 +31,7 @@ public class DreiecksungleichungWithBoolean {
         System.out.println("Der Umfang ist:" + umfang);
 
         double s = umfang / 2;
-        double inhalt = Math.sqrt(s * (s - A) * ( s - B) * ( s - C) ); // Herons Formel
+        double inhalt = Math.sqrt(s * (s - A) * (s - B) * (s - C)); // Herons Formel
         System.out.println("Der Flächeninhalt ist:" + inhalt);
 
     }

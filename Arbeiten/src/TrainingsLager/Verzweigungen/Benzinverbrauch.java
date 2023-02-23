@@ -15,7 +15,7 @@ public class Benzinverbrauch {
 
             if (kilometer < 0) {
                 System.out.println("Falsche Eingabe! Möchten Sie nochmal versuchen? J oder N?");
-            } else if (kilometer == 0){
+            } else if (kilometer == 0) {
                 System.out.println("Sie haben nicht gefahren! Möchten Sie nochmal versuchen? J oder N?");
             } else {
                 System.out.println("Wie viele Kraftstoffes in Liter haben Sie verbraucht?");

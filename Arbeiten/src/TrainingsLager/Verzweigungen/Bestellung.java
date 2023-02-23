@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Bestellung {
     public static void main(String[] args) throws IOException {
-        do{
+        do {
             double s = 0.5;
             double m = 0.3;
             double u = 0.1;
@@ -22,16 +22,16 @@ public class Bestellung {
             double unterlegscheiben = IO.readDouble();
             double summeUnterlegscheiben = u * unterlegscheiben;
 
-            double summe = summeMuttern + summeSchrauben +summeUnterlegscheiben;
+            double summe = summeMuttern + summeSchrauben + summeUnterlegscheiben;
 
-            if (schrauben == muttern){
+            if (schrauben == muttern) {
                 System.out.println("Die Bestellung ist möglich!");
                 System.out.println("Das kostet " + summe + "€");
             } else {
                 System.out.println("Die Bestellung ist nicht möglich!");
                 System.out.print("Möchten Sie die Bestellung neu aufnehmen? j - n");
             }
-        }while(IO.readBoolean());
+        } while (IO.readBoolean());
 
     }
 }

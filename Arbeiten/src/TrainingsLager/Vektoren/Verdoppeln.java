@@ -14,18 +14,18 @@ public class Verdoppeln {
         int kz = IO.readInteger();
         double array[] = new double[kz];
 
-        for ( int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             System.out.print("Wert " + (i + 1) + " eingeben: ");
             array[i] = IO.readDouble();
         }
 
         System.out.println("Ursprüngliches Array: ");
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + "\t");
         }
 
         System.out.println("\nVerdoppeltes Array:");
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             double x2 = array[i] * 2;
             System.out.print(x2 + "\t");
         }

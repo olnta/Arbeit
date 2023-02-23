@@ -13,7 +13,7 @@ public class Summe {
         int gz = IO.readInteger();
         double array[] = new double[gz];
 
-        for ( int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             System.out.print("Wert " + (i + 1) + " eingeben: ");
             array[i] = IO.readDouble();
         }
@@ -24,13 +24,13 @@ public class Summe {
         int unanzahl = 0;
 
 
-        for(int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             //Modulo-Operation
-            if((array[i] % 2) == 0){
+            if ((array[i] % 2) == 0) {
                 gerade += array[i];
                 anzahl++;
 
-            }else {
+            } else {
                 ungerade += array[i];
                 unanzahl++;
             }

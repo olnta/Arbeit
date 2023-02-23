@@ -1,4 +1,4 @@
-package Schleifen;
+package TrainingsLager.Schleifen;
 
 import OOP.IO;
 
@@ -12,8 +12,8 @@ public class Quadratsummen {
         int n = IO.readInteger();
         double summe = 0;
 
-        for (int i = 0; i <= n; i++){
-            summe = Math.pow(i,2) + summe;
+        for (int i = 0; i <= n; i++) {
+            summe = Math.pow(i, 2) + summe;
         }
         System.out.println("Die Summe aller Quadratzahlen bis ihre Angabe ist: " + summe);
     }

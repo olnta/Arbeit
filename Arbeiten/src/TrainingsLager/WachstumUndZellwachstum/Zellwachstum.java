@@ -14,9 +14,9 @@ public class Zellwachstum {
 
         System.out.println("\nTag         Zellmenge");
 
-        for (int i= 0; i <= tag; i++){
-            double x = 10 * Math.pow(3 , i);
-            System.out.println(i +"\t\t\t" + x);
+        for (int i = 0; i <= tag; i++) {
+            double x = 10 * Math.pow(3, i);
+            System.out.println(i + "\t\t\t" + x);
 
         }
 

@@ -10,13 +10,13 @@ public class Fuehrerschein {
         System.out.println("Wie alt bist du?");
         int alter = IO.readInteger();
 
-        if (alter < 14){
+        if (alter < 14) {
             System.out.println("Du darfst Bobby-Car oder Fahrrad fahren.");
-        } else if (alter < 16){
+        } else if (alter < 16) {
             System.out.println("Du darfst schon 50er fahren.");
-        } else if (alter < 18){
+        } else if (alter < 18) {
             System.out.println("Du darfst schon 125er fahren, aber noch kein Auto");
-        } else if (alter > 18 ) {
+        } else if (alter > 18) {
             System.out.println("Du darfst jetzt auch Auto fahren.");
         }
     }

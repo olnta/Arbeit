@@ -1,4 +1,4 @@
-package Schleifen;
+package TrainingsLager.Schleifen;
 
 import OOP.IO;
 
@@ -12,8 +12,8 @@ public class GeometrischeReihe {
         int n = IO.readInteger();
         double summe = 0;
 
-        for (int i = 1; i <= n; i++){
-            summe = summe + (1/(Math.pow(2,i)));
+        for (int i = 1; i <= n; i++) {
+            summe = summe + (1 / (Math.pow(2, i)));
         }
         System.out.println(summe);
 

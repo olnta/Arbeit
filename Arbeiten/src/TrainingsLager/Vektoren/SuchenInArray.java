@@ -16,7 +16,7 @@ public class SuchenInArray {
         double array[] = new double[5];
 
 
-        for ( int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             System.out.print("Wert " + (i + 1) + " eingeben: ");
             array[i] = IO.readDouble();
         }
@@ -25,11 +25,11 @@ public class SuchenInArray {
         double zahl = IO.readDouble();
 
         //double suchezahl = array[0];
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
 
-            if(zahl == array[i]){
+            if (zahl == array[i]) {
                 System.out.println("Treffer");
-            } else{
+            } else {
                 System.out.println("Niete");
             }
         }

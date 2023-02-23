@@ -17,7 +17,7 @@ public class Strenchen {
         System.out.println("2. Zahl: " + zahl2);
 
 
-        for (int i = 1; i <= zahl1; i++){
+        for (int i = 1; i <= zahl1; i++) {
 
             System.out.println();
 
@@ -29,8 +29,7 @@ public class Strenchen {
         }
 
 
-
-        for (int i = 1; i <= zahl2; i++){
+        for (int i = 1; i <= zahl2; i++) {
 
             System.out.println();
 
