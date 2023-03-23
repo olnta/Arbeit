@@ -3,6 +3,7 @@ package OOP;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.SQLOutput;
 
 /**
  * Erzeugt die Methoden:
@@ -133,7 +134,7 @@ public class IO {
         String[] texte;
 
         //Größe abfragen
-        System.out.println("Wie viele Texte sollen erfasst werden");
+        System.out.println("Wie viele Texte sollen erfasst werden?");
         int groesse = IO.readInteger();
 
         //Array Initialisieren
@@ -152,6 +153,30 @@ public class IO {
             System.out.println(" ");
         }
         return texte;
+    }
+    
+
+    public static int[][] readIntergerArray2D() throws IOException {
+
+
+        System.out.print("Wie viele Zeilen? ");
+        int zeilen = IO.readInteger();
+
+        System.out.print("Wie viele Spalten? ");
+        int spalten = IO.readInteger();
+        int[][] array = new int[zeilen][spalten];
+        readArray(array);
+        return array;
+        
+    }
+
+    private static void readArray(int[][] array) throws IOException {
+        for(int i = 0; i < array.length; i++){
+            for( int j = 0; j < array[i].length; j++){
+                System.out.println("Wert eingeben für [" + i + "][" + j + "]: " );
+                array[i][j] = readInteger();
+            }
+        }
     }
 }
 
