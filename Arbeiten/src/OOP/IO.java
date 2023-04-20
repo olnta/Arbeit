@@ -157,8 +157,6 @@ public class IO {
     
 
     public static int[][] readIntergerArray2D() throws IOException {
-
-
         System.out.print("Wie viele Zeilen? ");
         int zeilen = IO.readInteger();
 
