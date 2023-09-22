@@ -25,6 +25,6 @@ public class Maxima {
 
 
         System.out.println("Größte Zahl: " + max);
-        System.out.println("Zweite Zahl: ");
+        System.out.println("Zweite Zahl: " );
     }
 }

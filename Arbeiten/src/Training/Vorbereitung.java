@@ -20,7 +20,7 @@ public class Vorbereitung {
             zahlen[i] = IO.readDouble();
         }
 
-        //Summe Arithmetisches Mittel
+        //Summe arithmetisches Mittel
         double durch = ermittelnDurchschnitt(zahlen);
 
         //Maximum

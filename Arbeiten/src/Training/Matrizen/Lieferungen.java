@@ -21,15 +21,15 @@ public class Lieferungen {
         System.out.println("----------------");
         lieferungAnzeigen(feb);
 
-        int summe[][] = summeRechnen(jan,feb);
+       // int summe[][] = summeRechnen(jan,feb);
 
         System.out.println("\n");
     }
 
-    private static int[][] summeRechnen(int[][] jan,int[][]feb) {
+   // private static int[][] summeRechnen(int[][] jan,int[][]feb) {
 
-        int [][]summe = new int[][];
-    }
+
+    //}
 
 
 
