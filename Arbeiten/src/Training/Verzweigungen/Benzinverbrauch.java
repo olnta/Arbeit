@@ -22,6 +22,7 @@ public class Benzinverbrauch {
                 double kraftstoffeinLiter = IO.readDouble();
                 double durchschnittsverbrauch = 100 * (kraftstoffeinLiter / kilometer);
                 System.out.println("Der Durchschnittververbraucht ist :" + durchschnittsverbrauch);
+                System.out.println("Möchten sie weiter machen?");
             }
         } while (IO.readBoolean());
 
