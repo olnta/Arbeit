@@ -2,13 +2,9 @@ package Training.Vektoren;
 
 import OOP.IO;
 
-import java.io.IOException;
-
 public class Verdoppeln {
 
-    public static void main(String[] args) throws IOException {
-
-
+    public static void main(String[] args) {
         System.out.println("Bitte geben Sie ein Array aus Kommazahlen ein. ");
         System.out.print("Wie viele Werte? ");
         int kz = IO.readInteger();
@@ -19,7 +15,8 @@ public class Verdoppeln {
             array[i] = IO.readDouble();
         }
 
-        System.out.println("Ursprüngliches Array: ");
+        System
+                .out.println("Ursprüngliches Array: ");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + "\t");
         }
@@ -31,4 +28,5 @@ public class Verdoppeln {
         }
 
     }
+
 }

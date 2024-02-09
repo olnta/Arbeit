@@ -61,8 +61,10 @@ public class VierGewinnt6_7 {
     //Move
     private static void makeMove() throws IOException {
         int move = IO.readInteger();
+        // 5 because it's the last number of our array and -- because it goes from 5 to 4 and so on
         for (int i = 5; i >= 0; i--) {
             if (gameboard[i][move] != 'O') {
+                // it checks if the space is not free
             } else {
                 gameboard[i][move] = spielerSwitch();
                 return;
@@ -74,7 +76,8 @@ public class VierGewinnt6_7 {
     private static boolean checkWin() {
         //Horizontal
         for (int zeile = 0; zeile < gameboard.length; zeile++) {
-            for (int spalte = 0; spalte <= gameboard[0].length - 4; spalte++) {
+            for (int spalte = 0; spalte <= gameboard[0].length - 3; spalte++) {
+                // -3 because we only need 4 blocks to win
                 if (gameboard[zeile][spalte] == derzeitigerSpieler &&
                         gameboard[zeile][spalte + 1] == derzeitigerSpieler &&
                         gameboard[zeile][spalte + 2] == derzeitigerSpieler &&
@@ -86,7 +89,7 @@ public class VierGewinnt6_7 {
 
         //Vertikal
         for (int zeile = 0; zeile < gameboard.length - 3; zeile++) {
-            for (int spalte = 0; spalte < gameboard[0].length - 4; spalte++) {
+            for (int spalte = 0; spalte < gameboard[0].length ; spalte++) {
                 if (gameboard[zeile][spalte] == derzeitigerSpieler &&
                         gameboard[zeile + 1][spalte] == derzeitigerSpieler &&
                         gameboard[zeile + 2][spalte] == derzeitigerSpieler &&
@@ -98,7 +101,7 @@ public class VierGewinnt6_7 {
 
         //Diagonal von Links oben nach Rechts unten
         for (int zeile = 0; zeile < gameboard.length - 3; zeile++) {
-            for (int spalte = 0; spalte < gameboard[0].length - 3; spalte++) {
+            for (int spalte = 0; spalte < gameboard[0].length; spalte++) {
                 if (gameboard[zeile][spalte] == derzeitigerSpieler &&
                         gameboard[zeile + 1][spalte + 1] == derzeitigerSpieler &&
                         gameboard[zeile + 2][spalte + 2] == derzeitigerSpieler &&
@@ -111,7 +114,7 @@ public class VierGewinnt6_7 {
 
         //Diagonal von Rechts oben nach Links unten
         for (int zeile = 0; zeile < gameboard.length - 3; zeile++) {
-            for (int spalte = 3; spalte < gameboard[0].length - 3; spalte++) {
+            for (int spalte = 3; spalte < gameboard[0].length; spalte++) {
                 if (gameboard[zeile][spalte] == derzeitigerSpieler &&
                         gameboard[zeile + 1][spalte - 1] == derzeitigerSpieler &&
                         gameboard[zeile + 2][spalte - 2] == derzeitigerSpieler &&
